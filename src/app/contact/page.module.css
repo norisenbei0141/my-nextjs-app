@@ -1,0 +1,22 @@
+.container {
+    padding: 2rem;
+    background-color: #e0f2fe; 
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #0369a1; 
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .email {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #dc2626; 
+  }
+  

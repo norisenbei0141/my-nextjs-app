@@ -1,25 +1,15 @@
-"use client";
+"use client"; // 追加
 
-import { usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
-export default function RouteInfo() {
-  const pathname = usePathname();            
-  const searchParams = useSearchParams();     
-
-  const foo = searchParams.get("foo");
-  const baz = searchParams.get("baz");
+export default function RouteInfoPage() {
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id");
 
   return (
-    <div className="p-4">
-      <p>現在のパス: {pathname}</p>
-      <p>foo: {534}</p>
-      <p>baz: {8931}</p>
+    <div>
+      <h1>Route Info</h1>
+      <p>ID: {id}</p>
     </div>
   );
 }
-
-
-
-
-
-

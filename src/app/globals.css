@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* フォント変数の追加 */
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+code, pre {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +35,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* ユーティリティ追加 */
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,31 +1,20 @@
+// src/app/layout.tsx
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "My App",
-  description: "Next.js App Router sample",
+  description: "Using Geist font",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja">
-      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-
-        <header>
-          <Navbar />
-        </header>
-
-
-        <main className="p-6">{children}</main>
-
-
-        <footer className="p-4 bg-gray-200 dark:bg-gray-800 text-center text-sm">
-          © 2025 My App. All rights reserved.
-        </footer>
-      </body>
+    <html lang="ja" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
-
 
 

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* フォント変数の追加 */
+
 body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
